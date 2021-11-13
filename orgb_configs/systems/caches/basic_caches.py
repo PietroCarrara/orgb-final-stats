@@ -11,8 +11,8 @@ from m5.objects import Cache
 
 class BasicL1ICache(Cache):
 
-    size = '32kB'
-    assoc = 8
+    size = '64kB'
+    assoc = 4
     tag_latency = 1
     data_latency = 1
     response_latency = 1
@@ -41,7 +41,7 @@ class BasicL1DCache(Cache):
 
 class BasicL2Cache(Cache):
 
-    size = '256kB'
+    size = '512kB'
     assoc = 8
     tag_latency = 8
     data_latency = 12
@@ -56,7 +56,7 @@ class BasicL2Cache(Cache):
 
 class BasicL3Cache(Cache):
 
-    size = '2MB'
+    size = '4MB'
     assoc = 16
     tag_latency = 12
     data_latency = 36

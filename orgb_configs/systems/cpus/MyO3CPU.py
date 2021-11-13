@@ -124,7 +124,7 @@ class MyO3CPU(DerivO3CPU):
 ############################################################
 ## Preditor de desvios
 ############################################################
-    branchPred = TournamentBP() # Branch Predictor
+    branchPred = LTAGE() # Branch Predictor
 
 ############################################################
 ## Latências entre os diferentes estágios do pipeline.
