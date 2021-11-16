@@ -979,7 +979,7 @@
                     "indexing_policy": {
                         "name": "indexing_policy", 
                         "eventq_index": 0, 
-                        "assoc": 16, 
+                        "assoc": 4, 
                         "cxx_class": "SetAssociative", 
                         "path": "system.cpu.icache.tags.indexing_policy", 
                         "entry_size": 64, 
@@ -987,7 +987,7 @@
                         "size": 65536
                     }, 
                     "sequential_access": false, 
-                    "assoc": 16, 
+                    "assoc": 4, 
                     "power_model": [], 
                     "cxx_class": "BaseSetAssoc", 
                     "p_state_clk_gate_max": 1000000000000, 
@@ -1012,7 +1012,7 @@
                 "name": "icache", 
                 "p_state_clk_gate_bins": 20, 
                 "sequential_access": false, 
-                "assoc": 16
+                "assoc": 4
             }, 
             "path": "system.cpu", 
             "numRobs": 1, 
@@ -1245,7 +1245,7 @@
             "trapLatency": 10, 
             "iewToDecodeDelay": 1, 
             "numPhysCCRegs": 480, 
-            "renameToIEWDelay": 2, 
+            "renameToIEWDelay": 16, 
             "apic_clk_domain": {
                 "name": "apic_clk_domain", 
                 "clk_domain": "system.clk_domain", 
